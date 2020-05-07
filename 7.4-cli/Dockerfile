@@ -1,6 +1,6 @@
 FROM php:7.4-cli
 
-COPY --from=composer-file /usr/bin/composer /usr/bin/composer
+COPY --from=composer:latest /usr/local/composer /usr/local/composer
 
 RUN apt-get update \
     && apt-get install -y libzip-dev zlib1g-dev git libssl-dev zip \
