@@ -1,27 +1,27 @@
 version: 2
 updates:
   - package-ecosystem: docker
-    directory: "/php-7.1"
+    directory: "/7.1-cli"
     schedule:
       interval: daily
     open-pull-requests-limit: 1
   - package-ecosystem: docker
-    directory: "/php-7.2"
+    directory: "/7.2-cli"
     schedule:
       interval: daily
     open-pull-requests-limit: 1
   - package-ecosystem: docker
-    directory: "/php-7.3"
+    directory: "/7.3-cli"
     schedule:
       interval: daily
     open-pull-requests-limit: 1
   - package-ecosystem: docker
-    directory: "/php-7.4"
+    directory: "/7.4-cli"
     schedule:
       interval: daily
     open-pull-requests-limit: 1
   - package-ecosystem: docker
-    directory: "/php-8.0"
+    directory: "/8.0-cli"
     schedule:
       interval: daily
     open-pull-requests-limit: 1
