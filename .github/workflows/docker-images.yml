@@ -37,3 +37,4 @@ jobs:
           context: ${{ matrix.version }}
           tags: ${{ matrix.version }}
           pull: true
+          push: true
