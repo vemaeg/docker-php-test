@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push Docker image for php ${{ matrix.version }}
-        uses: docker/build-push-action@v1.1.0
+        uses: docker/build-push-action@v1
         with:
           context: ${{ matrix.version }}
           # Docker repository to tag the image with
