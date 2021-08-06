@@ -29,6 +29,7 @@ jobs:
       - name: Build and push Docker image for PHP 7.1
         uses: docker/build-push-action@v1.1.0
         with:
+          context: ${{ matrix.version }}
           # Docker repository to tag the image with
           repository: vema/docker-php-test
           tags: ${{ matrix.version }}
