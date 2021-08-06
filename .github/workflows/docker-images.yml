@@ -26,15 +26,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: vema/docker-php-test
       - name: Build and push Docker image for php ${{ matrix.version }}
         uses: docker/build-push-action@v2
         with:
           context: ${{ matrix.version }}
-          tags: ${{ matrix.version }}
+          tags: vema/docker-php-test:${{ matrix.version }}
           pull: true
           push: true
