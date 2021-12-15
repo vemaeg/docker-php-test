@@ -1,21 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: docker
-    directory: "/7.1-cli"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 1
-  - package-ecosystem: docker
-    directory: "/7.2-cli"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 1
-  - package-ecosystem: docker
-    directory: "/7.3-cli"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 1
-  - package-ecosystem: docker
     directory: "/7.4-cli"
     schedule:
       interval: daily
@@ -25,3 +10,9 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 1
+  - package-ecosystem: docker
+    directory: "/8.1-cli"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 1
+
