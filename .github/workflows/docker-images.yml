@@ -16,7 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        version: [7.4-cli, 8.1-cli, 8.2-cli]
+        version: [8.1-cli, 8.2-cli]
         
     steps:
       - 
